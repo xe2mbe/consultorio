@@ -1,9 +1,12 @@
+
+from colorama import Cursor, init
+init()
 from paciente import consultar, altaPaciente, diagnosticar, tratar
 from tools import borrarPantalla
 pacientes = {}
 borrarPantalla()
 while True: 
-    print("###############################CONSULTORIO DE LA DOCTORA GISELA SIMI#######################################"
+    print(Cursor.BACK(10)+ Cursor.UP(1)+"###############################CONSULTORIO DE LA DOCTORA GISELA SIMI#######################################"
     "\n\n\n" 
     "C) CONSULTAR\n" 
     "S) SALIR\n\n\n")
